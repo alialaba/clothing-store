@@ -1,0 +1,55 @@
+{
+    "navItems":[
+    {"id": 1 , "text": "About", "href": "/about" },
+    {"id": 2 ,"text": "Collection","href": "/collection" },
+    { "id": 3 ,"text": "Contact", "href": "/contact" },
+    { "id": 4 ,"text": "Shop", "href": "/shop" }
+  ],
+  "footer": {
+    "columns": [
+      {
+        "title": "Social Links",
+        "links": [
+          { "name": "Facebook", "url": "https://www.facebook.com" },
+          { "name": "Twitter", "url": "https://www.twitter.com" },
+          { "name": "Instagram", "url": "https://www.instagram.com" },
+          { "name": "LinkedIn", "url": "https://www.linkedin.com" }
+        ]
+      },
+      {
+        "title": "Shop",
+        "links": [
+          { "name": "New Arrivals", "url": "/shop/new-arrivals" },
+          { "name": "Best Sellers", "url": "/shop/best-sellers" },
+          { "name": "Sale", "url": "/shop/sale" },
+          { "name": "Gift Cards", "url": "/shop/gift-cards" }
+        ]
+      },
+      {
+        "title": "Subscribe",
+        "description": "Sign up for our newsletter to stay updated.",
+        "subscribeForm": {
+          "placeholder": "Enter your email",
+          "buttonText": "Subscribe"
+        }
+      },
+      {
+        "title": "Information",
+        "links": [
+          { "name": "About Us", "url": "/about" },
+          { "name": "Careers", "url": "/careers" },
+          { "name": "Privacy Policy", "url": "/privacy-policy" },
+          { "name": "Terms of Service", "url": "/terms-of-service" }
+        ]
+      },
+      {
+        "title": "Contact",
+        "contactDetails": {
+          "address": "123 Main Street, Anytown, USA",
+          "phone": "+1 (123) 456-7890",
+          "email": "support@example.com"
+        }
+      }
+    ]
+  }
+}

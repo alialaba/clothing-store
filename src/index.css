@@ -1,11 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --clr-white:#fff;
+  --clr-black: #000;
+  --clr-brand:#800080;
+  font-size: 62.5%;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,24 +23,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
-}
+} */
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
-h1 {
+
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -65,4 +69,67 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+/********************/
+/*CSS RESETS*/
+/********************/
+/* 1. Use a more-intuitive box-sizing model. */
+*,*::before, *::after{
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin/padding */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Allow perccentage based height */
+html,body{
+  height: 100%;
+  font-size: 1.6rem;
+}
+/* 4. Improve media defaults */
+img, picture, svg{
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Avoid text overflows */
+p,h1,h2, h3, h4,h5,h6{
+  overflow-wrap: break-word;
+}
+
+/*
+Typographic tweaks!
+6. Add accessible line-height and Improve text rendering
+*/
+body {
+-webkit-font-smoothing: antialiased;
+line-height: 1.5;
+font-family: 'Roboto', sans-serif;
+background-color: var(--clr-white);
+}
+
+/* 7. Remove built-in form typography styles */
+
+ button {
+  font: inherit;
+}
+
+h1,h2{
+ margin-top: 2em;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+.container{
+  margin: 0 auto;
+  width: min(1200px, 90%);
 }
