@@ -12,6 +12,7 @@
   --clr-white:#fff;
   --clr-black: #000;
   --clr-brand:#800080;
+  --clr-brand-light:#DDA0DD;
   font-size: 62.5%;
 
   /* color-scheme: light dark;
@@ -118,6 +119,7 @@ background-color: var(--clr-white);
 
  button {
   font: inherit;
+  border: none;
 }
 
 h1,h2{
@@ -145,10 +147,141 @@ input{
   width: min(1200px, 90%);
 }
 
+/* HEADER STYLES */
+.header{
+  padding: 2em 0;
+}
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav{
+  /* display: flex;
+  align-items: center; */
+  /* display: none; */
+}
+.nav__list{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+}
+.nav__link{
+  font-family: var(--ff-saira-condensed);
+  color: var(--clr-brand-light);
+  font-size: 1.9rem;
+  font-weight: 600;
+  
+}
+.nav__item{
+  margin-right: 1em;
+}
+.search-cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__search{
+        /* margin-top: 1.5em; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+      
+        border-radius: 5px;
+        border: 1px solid var(--clr-brand);
+        margin-right: 2em;
+}
+.header__input{
+  border-radius: 4px;
+  padding: .5em 0;
+  color: var(--clr-brand);
+}
+.header__search button{
+  background-color: var(--clr-brand-light);
+  padding: .5em .8em;
+  font-weight: 700;
+  font-family: var(--ff-inter);
+  font-size: 1.4rem;
+}
+
+/* Toggle on mobile */
+.header__toggle{
+  /* font-size: 1.4rem; */
+  display: none;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+
+/* CART Content */
+.cart-content{
+  position: relative;
+}
+.cart-icon{
+  font-size: 2.4rem;
+  color: var(--clr-black);
+}
+.cart-no{
+    position: absolute;
+    bottom: -3px;
+    right: -4.5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--clr-brand-light);
+    border: 1px solid var(--clr-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    font-family: var(--ff-inter);
+    font-weight: 700;
+
+}
+/* Destop */
+@media(min-width: 944px){
+  .nav{
+      display: block;
+      display: flex;
+     }
+     .nav__list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      
+     }
+}
+
+/* Tabs */
+@media(max-width: 944px){
+  .nav{
+      display: none;
+     }
+}
+
+/* Mobile */
+@media(max-width: 540px){
+  .nav{
+     
+     }
+     .header__search{
+      display: none;
+     }
+
+     /* Toggle on mobile */
+.header__toggle{
+  /* font-size: 1.4rem; */
+  display: block;
+}
+}
 
 /* FOOTER STYLES */
 .footer{
   background-color: var(--clr-brand);
+
 }
 .footer__row{
   display: flex;
@@ -210,7 +343,6 @@ input{
 .footer__btn{
   color: var(--clr-brand);
   background-color: var(--clr-white);
-  border: none;
   padding: .5em .8em;
   font-weight: 700;
   font-family: var(--ff-inter);

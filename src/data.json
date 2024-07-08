@@ -1,10 +1,25 @@
 {
-    "navItems":[
-    {"id": 1 , "text": "About", "href": "/about" },
-    {"id": 2 ,"text": "Collection","href": "/collection" },
-    { "id": 3 ,"text": "Contact", "href": "/contact" },
-    { "id": 4 ,"text": "Shop", "href": "/shop" }
-  ],
+    "header": {
+        "logo":{
+          "src": "../src/assets/logo-light.svg",
+          "alt": "logo light"
+        },
+        "navLinks":[
+          {"id": 1 , "text": "About", "url": "/" },
+          {"id": 2 ,"text": "Collection","url": "/" },
+          { "id": 3 ,"text": "Contact", "url": "/" },
+          { "id": 4 ,"text": "Shop", "url": "/" }
+        ],
+    "search": {
+      "placeholder": "Search..."
+    },
+    "cart": {
+      "icon": "fa-shopping-cart",
+      "url": "/"
+    }
+    }
+    
+  ,
   "footer": {
     "columns": [
       {
