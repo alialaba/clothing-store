@@ -12,7 +12,8 @@
   --clr-white:#fff;
   --clr-black: #000;
   --clr-brand:#800080;
-  --clr-brand-light:#DDA0DD;
+  --clr-brand-light:#DDA0DD; 
+  --clr-brand-lighter:#DDA0DD4D;
   font-size: 62.5%;
 
   /* color-scheme: light dark;
@@ -120,11 +121,9 @@ background-color: var(--clr-white);
  button {
   font: inherit;
   border: none;
+  background: none;
 }
 
-h1,h2{
- margin-top: 2em;
-}
 
 ul{
   list-style: none;
@@ -142,6 +141,21 @@ input{
   outline: none;
 }
 
+
+/* Template naming */
+.mt > * + *{
+  margin-top: 1em;
+}
+.btn-bg{
+  background-color: var(--clr-brand);
+  color: var(--clr-white);
+  padding: .6em 1.8em;
+  box-shadow: 0px 9.24px 9.24px 0px #00000033;
+  border-radius: 10px;
+  font-family: var(--ff-saira-condensed);
+  font-weight: 700;
+  font-size: 1.875rem;
+}
 .container{
   margin: 0 auto;
   width: min(1200px, 90%);
@@ -347,4 +361,75 @@ input{
   font-weight: 700;
   font-family: var(--ff-inter);
   font-size: 1.4rem;
+}
+
+/* count down style */
+.count-down__card{
+  background-color: var(--clr-brand-lighter);
+  padding: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  gap: 3em;
+}
+.count-down__title{
+  font-family: var(--ff-saira-condensed);
+  font-size: 4.75rem;
+  color: var(--clr-brand);
+  font-weight: 600;
+}
+.count-down__timer{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.count-down__content, .count-down__img{
+  flex-grow: 1;
+}
+.count-down__content{
+  /* flex-grow: 1; */
+  /* flex-basis: 60%; */
+  flex-basis: 30%;
+  /* background-color: red; */
+  /* height: 0;
+  margin-top: 0; */
+}
+.count-down__img{
+  /* flex-grow: 1; */
+  flex-basis: 45%; 
+ 
+}
+.count-down__col{
+  background-color: var(--clr-white);
+  border-radius: 5px;
+  color: var(--clr-brand);
+  text-align: center;
+  /* padding: .7em; */
+  height: 60px;
+  width: 60px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.count-down__number{
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: var(--ff-inter);
+}
+.count-down__label{
+  font-size: 1.1rem;
+}
+.count-down__text{
+  font-family: var(--ff-inter);
+}
+
+@media (max-width:944px){
+.count-down__card{
+  padding: 2em;
+}
 }

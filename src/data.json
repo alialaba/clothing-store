@@ -5,21 +5,27 @@
           "alt": "logo light"
         },
         "navLinks":[
-          {"id": 1 , "text": "About", "url": "/" },
-          {"id": 2 ,"text": "Collection","url": "/" },
-          { "id": 3 ,"text": "Contact", "url": "/" },
-          { "id": 4 ,"text": "Shop", "url": "/" }
+          { "text": "About", "url": "/about" },
+          {"text": "Collection","url": "/collection" },
+          { "text": "Contact", "url": "/contact" },
+          { "text": "Shop", "url": "/shop" }
         ],
     "search": {
       "placeholder": "Search..."
     },
     "cart": {
       "icon": "fa-shopping-cart",
-      "url": "/"
+      "url": "/cart"
     }
     }
     
   ,
+  "reviews":[
+    {"name" : "Tiara James", "comments": "The is so superb,it fits perfectly on me,The dress quality is highly recommendable"},
+    {"name" : "Rosy Vick", "comments": "The is so superb,it fits perfectly on me,The dress quality is highly recommendable"},
+    {"name" : "Mary Smith", "comments": "The is so superb,it fits perfectly on me,The dress quality is highly recommendable"}
+
+  ],
   "footer": {
     "columns": [
       {

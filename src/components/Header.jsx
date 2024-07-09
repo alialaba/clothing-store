@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart , faSearch, faHamburger} from '@fortawesome/free-solid-svg-icons';
@@ -14,16 +15,16 @@ export const Header =()=>{
 
            <div className="header__wrapper">
             
-           <a>
+           <Link to="/">
             <img src={header.logo.src} alt={header.logo.alt}/>
-        </a>
+        </Link>
         <nav className="nav">
             {header.navLinks.map((item, index)=>(
                 <ul key={index} className="nav__list">
                     <li className="nav__item">
-                    <a  href={item.url} className="nav__link" >
+                    <Link  to={item.url} className="nav__link" >
                     {item.text}
-                </a>
+                </Link>
                     </li>
                 </ul>
                 
@@ -35,10 +36,10 @@ export const Header =()=>{
            <button> <FontAwesomeIcon icon={faSearch} /></button>
         </form>
         <FontAwesomeIcon className="header__toggle" icon={faHamburger} />
-        <a href={header.cart.url} className="cart-content">
+        <Link to={header.cart.url} className="cart-content">
           <FontAwesomeIcon className="cart-icon" icon={faShoppingCart} />
           <span className="cart-no">0</span>
-        </a>
+        </Link>
       </div>
 
 

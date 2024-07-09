@@ -1,17 +1,29 @@
 import { useState } from 'react';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import data from "./data.json";
+const {reviews} = data;
+
 import './App.css';
+
+
 import { Home } from './pages/Home/Home';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 
+
 function App() {
 
   return (
+   <Router>
+    <Header/>
     <main>
-      <Header/>
-      <Home/>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<Home reviews={reviews}/>}/>
+      </Routes>
+
     </main>
+    <Footer/>
+   </Router>
   )
 }
 
