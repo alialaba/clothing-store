@@ -6,7 +6,7 @@ import countImg from "../assets/count-down-img.png"
 export const CountDownCard = ()=>{
     return(
         <div className="count-down__card ">
-            <div className="count-down__content mt">
+            <div className="count-down__content stack">
                 <h2 className="count-down__title">Exclusive Deal</h2>
                 <p className="count-down__text">Enjoy our exclusive offer of the day,get up to 30% offer on our new arrival collections.</p>
                <div className="count-down__timer">

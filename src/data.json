@@ -17,9 +17,140 @@
       "icon": "fa-shopping-cart",
       "url": "/cart"
     }
-    }
-    
-  ,
+    },
+
+    "products": {
+    "tabs": [
+      {
+        "name": "Hot",
+        "items": [
+          {
+            "img": "../src/assets/hot-1.png",
+            "name": "Stylish Thick Top",
+            "discountPrice": 19.99,
+            "actualPrice": 29.99,
+            "rating": 4.5
+          },
+          {
+            "img": "../src/assets/hot-2.png",
+            "name": "Comfy Jean Trousers",
+            "discountPrice": 24.99,
+            "actualPrice": 39.99,
+            "rating": 4.0
+          },
+          {
+            "img": "../src/assets/hot-2.png",
+            "name": "Leather Jacket & Pant",
+            "discountPrice": 24.99,
+            "actualPrice": 39.99,
+            "rating": 4.0
+          }
+        ]
+      },
+      {
+        "name": "Sales",
+        "items": [
+
+          {
+            "img": "../src/assets/product-img-one.png",
+            "discountPrice": 29.99,
+            "actualPrice": 49.99,
+            "rating": 4.5,
+            "name": "Turtle Neck Top"
+          },
+          {
+            "img": "../src/assets/product-img-two.png",
+            "discountPrice": 19.99,
+            "actualPrice": 39.99,
+            "rating": 4.0,
+            "name": "Turtle Neck Top"
+          },
+          {
+            "img": "../src/assets/product-img-three.png",
+            "discountPrice": 15.99,
+            "actualPrice": 29.99,
+            "rating": 3.5,
+            "name": "Turtle Neck Top"
+          },
+          {
+            "img": "../src/assets/product-img-four.png",
+            "discountPrice": 29.99,
+            "actualPrice": 49.99,
+            "rating": 4.5,
+            "name": "Turtle Neck Top"
+          },
+          {
+            "img": "../src/assets/product-img-five.png",
+            "discountPrice": 19.99,
+            "actualPrice": 39.99,
+            "rating": 4.0,
+            "name": "Turtle Neck Top"
+          },
+          {
+            "img": "../src/assets/product-img-six.png",
+            "discountPrice": 15.99,
+            "actualPrice": 29.99,
+            "rating": 3.5,
+            "name": "Turtle Neck Top"
+          },
+          {
+            "img": "../src/assets/product-img-seven.png",
+            "discountPrice": 15.99,
+            "actualPrice": 29.99,
+            "rating": 3.5,
+            "name": "Turtle Neck Top"
+          },
+          {
+            "img": "../src/assets/product-img-seven.png",
+            "discountPrice": 15.99,
+            "actualPrice": 29.99,
+            "rating": 3.5,
+            "name": "Turtle Neck Top"
+          }
+        ]
+      },
+      {
+        "name": "New Arrival",
+        "items": [
+              
+          {
+            "img": "path/to/new-arrival-product1.jpg",
+            "name": "New Arrival Product 1",
+            "discountPrice": 29.99,
+            "actualPrice": 49.99,
+            "rating": 5.0
+          },
+          {
+            "img": "path/to/new-arrival-product2.jpg",
+            "name": "New Arrival Product 2",
+            "discountPrice": 34.99,
+            "actualPrice": 59.99,
+            "rating": 4.8
+          }
+  
+        ]
+      },
+      {
+        "name": "Accessories",
+        "items": [
+          {
+            "img": "path/to/accessories-product1.jpg",
+            "name": "Accessories Product 1",
+            "discountPrice": 5.99,
+            "actualPrice": 9.99,
+            "rating": 4.0
+          },
+          {
+            "img": "path/to/accessories-product2.jpg",
+            "name": "Accessories Product 2",
+            "discountPrice": 7.99,
+            "actualPrice": 12.99,
+            "rating": 4.3
+          }
+        ]
+      }
+    ]
+  },
   "reviews":[
     {"name" : "Tiara James", "comments": "The is so superb,it fits perfectly on me,The dress quality is highly recommendable"},
     {"name" : "Rosy Vick", "comments": "The is so superb,it fits perfectly on me,The dress quality is highly recommendable"},
@@ -74,3 +205,4 @@
     ]
   }
 }
+

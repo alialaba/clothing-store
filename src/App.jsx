@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import data from "./data.json";
-const {reviews} = data;
+const {reviews, products} = data;
 
 import './App.css';
 
@@ -18,7 +18,7 @@ function App() {
     <Header/>
     <main>
       <Routes>
-        <Route path='/' element={<Home reviews={reviews}/>}/>
+        <Route path='/' element={<Home reviews={reviews}  products={products}/>}/>
       </Routes>
 
     </main>

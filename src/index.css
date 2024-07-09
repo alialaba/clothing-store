@@ -7,6 +7,7 @@
 :root {
   --ff-inter: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --ff-saira-condensed: "Saira Condensed", sans-serif;
+  --ff-poppins:"Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   --clr-white:#fff;
@@ -143,9 +144,11 @@ input{
 
 
 /* Template naming */
-.mt > * + *{
-  margin-top: 1em;
-}
+
+  .stack > * + * {
+    margin-block-start: 1.5rem;
+  }
+
 .btn-bg{
   background-color: var(--clr-brand);
   color: var(--clr-white);
@@ -156,6 +159,18 @@ input{
   font-weight: 700;
   font-size: 1.875rem;
 }
+
+.subheading{
+  margin-bottom: 3em;
+  text-align: center;
+}
+.subheading__title{
+  color: var(--clr-brand);
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: var(--ff-poppins);
+}
+
 .container{
   margin: 0 auto;
   width: min(1200px, 90%);
@@ -432,4 +447,196 @@ input{
 .count-down__card{
   padding: 2em;
 }
+}
+
+
+.review__list{
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: space-between; */
+  /* gap: 2em; */
+  
+}
+.review__item{
+ 
+  /* flex-basis: calc(33.333% - 1em); 3 items per row with some spacing */
+  /* box-shadow: 0px 3.74px 3.74px 0px #00000033;
+  padding: 2em;
+  flex-grow: 1;
+  flex-basis: 100px; */
+
+}
+
+/* Collection */
+.collection__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+.collection__item{
+  flex-grow: 1;
+  flex-basis: 300px;
+  background-color: var(--clr-brand-lighter);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+
+
+}
+.btn-md{
+  background-color: var(--clr-brand);
+  color: var(--clr-white);
+  font-family: var(--ff-saira-condensed);
+  padding: .5em 1.8em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 2px;
+ 
+  /* bottom: -15px; */
+
+  /* bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%); */
+
+}
+
+/* Hero */
+.hero{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+  position: relative;
+}
+.hero__content{
+  flex: 1 0 38%;
+}
+
+.hero__img{
+  flex: 1 0 52%;
+  position: relative;
+
+}
+.hero__title{
+  font-size: 3rem;
+  font-family: var(--ff-saira-condensed);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.hero__title span{
+  color: var(--clr-brand-light);
+}
+.hero__text{
+  font-family: var(--ff-poppins);
+}
+
+@media(min-width:944px){
+  .hero::before{
+    position: absolute;
+    content: "";
+    /* background-image: url(../src/assets/test.png); */
+    background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  }
+  .hero__title{
+    font-size: 5.5rem;
+  }
+  .hero__img::before{
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: var(--clr-brand-lighter);
+    bottom: 70%;
+    left: 48%;
+    z-index: -4;
+    /* transform: translate(-50%,-50%); */
+  }
+}
+
+/* products */
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.products__card{
+  flex: 1 0 250px;
+
+}
+.products__content--upper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products__content--lower{
+  display: flex;
+  gap: 1em;
+}
+.products__name{
+  font-family: var(--ff-inter);
+  font-weight: 700;
+}
+.products__img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-brand-lighter);
+  margin-bottom: 1em;
+}
+.products__content{
+  padding: .5em;
+}
+.products__img img{
+  /* object-fit:fill; */
+}
+.products__actual-price{
+  text-decoration: line-through;
+  color: var(--clr-brand);
+}
+.products__discount-price{
+ 
+}
+.btn-br{
+  border: 1px solid var(--clr-brand);
+  border-radius: 5px;
+  padding: .5em 1.7em;
+  font-family: var(--ff-inter);
+  color: var(--clr-brand);
+  font-weight: 700;
+  cursor: pointer;
+}
+.products-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 3em auto;
+  gap: 2em;
+}
+.tab-button{
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.active{
+  background-color: var(--clr-brand-lighter);
+  color: var(--clr-brand);
+  padding: .5em 1em;
+  border-radius: 6px;
+  font-weight: 700;
 }

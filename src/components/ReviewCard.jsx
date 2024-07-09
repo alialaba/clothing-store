@@ -1,9 +1,9 @@
 import React from "react";
 
+
 export const ReviewCard = (props)=>{
-    console.log(props.item)
     return(
-           <article>
+           <article className="review__item">
             <h4>{props.item.name}</h4>
             <p>{props.item.comments}</p>
             
