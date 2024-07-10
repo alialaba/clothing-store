@@ -7,8 +7,10 @@ import './App.css';
 
 
 import { Home } from './pages/Home/Home';
+import {Cart} from "./pages/Cart";
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
     <main>
       <Routes>
         <Route path='/' element={<Home reviews={reviews}  products={products}/>}/>
+        <Route path='/cart' element={<Cart/>}>  </Route>
       </Routes>
 
     </main>
