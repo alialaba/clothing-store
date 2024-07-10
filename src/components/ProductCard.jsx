@@ -1,6 +1,8 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import { Button } from "./Button";
 import { FaStar } from "react-icons/fa";
+
 
 export const ProductCard =(props)=>{
     return(
@@ -25,7 +27,9 @@ export const ProductCard =(props)=>{
                     
                 </div>
 
-                <Button className="btn-br" text="Add to cart"/>
+               <Link to="/cart">
+               <Button className="btn-br" text="Add to cart"/>
+               </Link>
             </div>
             
         </article>
