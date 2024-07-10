@@ -1,7 +1,7 @@
 {
     "header": {
         "logo":{
-          "src": "../src/assets/logo-light.svg",
+          "src": "https://i.ibb.co/zVVSbqZ/logo-light.png",
           "alt": "logo light"
         },
         "navLinks":[
@@ -52,28 +52,28 @@
         "items": [
 
           {
-            "img": "../src/assets/product-img-one.png",
+            "img": "https://i.ibb.co/k0XJD81/image-1-8-removebg-preview-1-1-1.png",
             "discountPrice": 29.99,
             "actualPrice": 49.99,
             "rating": 4.5,
             "name": "Turtle Neck Top"
           },
           {
-            "img": "../src/assets/product-img-two.png",
+            "img": "https://i.ibb.co/ftNXwMM/really-you-can-trust-me-removebg-preview-1-1.png",
             "discountPrice": 19.99,
             "actualPrice": 39.99,
             "rating": 4.0,
             "name": "Turtle Neck Top"
           },
           {
-            "img": "../src/assets/product-img-three.png",
+            "img": "https://i.ibb.co/BjmSNNs/image-1-4-removebg-preview-1-1.png",
             "discountPrice": 15.99,
             "actualPrice": 29.99,
             "rating": 3.5,
             "name": "Turtle Neck Top"
           },
           {
-            "img": "../src/assets/product-img-four.png",
+            "img": "https://i.ibb.co/1vCHnhM/image-1-6-removebg-preview-1-1.png",
             "discountPrice": 29.99,
             "actualPrice": 49.99,
             "rating": 4.5,
