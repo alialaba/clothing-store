@@ -644,6 +644,7 @@ input{
 /* cart */
 .cart{
   display: flex;
+  flex-wrap: wrap;
   /* justify-content: center; */
   /* align-items: center; */
   gap: 2em;
@@ -654,10 +655,12 @@ position: relative;
 }
 .cart__content{
   font-family: var(--ff-inter);
+  flex: 1 0 40%;
 }
 .cart__img{
   background: var(--clr-brand-lighter);
   padding: 2em;
+  flex: 1 0 40%;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -732,5 +735,6 @@ position: relative;
 }
 .cart__btn{
   display: flex;
+  flex-wrap: wrap;
   gap: 2em;
 }
