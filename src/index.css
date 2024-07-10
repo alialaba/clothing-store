@@ -146,7 +146,7 @@ input{
 /* Template naming */
 
   .stack > * + * {
-    margin-block-start: 1.5rem;
+    margin-block-start: 1rem;
   }
 
 .btn-bg{
@@ -158,6 +158,7 @@ input{
   font-family: var(--ff-saira-condensed);
   font-weight: 700;
   font-size: 1.875rem;
+  cursor: pointer;
 }
 
 .subheading{
@@ -168,17 +169,17 @@ input{
   color: var(--clr-brand);
   font-weight: 700;
   font-size: 3rem;
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-inter);
 }
 
 .container{
   margin: 0 auto;
-  width: min(1200px, 90%);
+  width: min(1400px, 90%);
 }
 
 /* HEADER STYLES */
 .header{
-  padding: 2em 0;
+  padding: 1em 0;
 }
 .header__wrapper{
   display: flex;
@@ -491,13 +492,15 @@ input{
 .btn-md{
   background-color: var(--clr-brand);
   color: var(--clr-white);
-  font-family: var(--ff-saira-condensed);
+  font-family: var(--ff-inter);
   padding: .5em 1.8em;
+  width: 50%;
+  text-transform: uppercase;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -0%);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   border-radius: 2px;
  
@@ -542,14 +545,30 @@ input{
 }
 
 @media(min-width:944px){
-  .hero::before{
+  .section-hero{
+
+  }
+  .section-hero::after{
     position: absolute;
     content: "";
-    /* background-image: url(../src/assets/desktop-pattern.svg); */
+    background-image: url(../src/assets/sample.png);
     background-repeat: no-repeat;
-  height: 100%;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: -1;
+    /* background-color: red; */
+    top: 96px;
+    left: 0;
+    /* left: 200px; */
+    
+    /* bottom: 300px; */
+    
+  /* height: 100%;
   width: 100%;
-  background-size: cover;
+  background-size: cover; */
+  /* top: 20%; */
   }
   .hero__title{
     font-size: 5.5rem;
@@ -561,7 +580,7 @@ input{
     height: 250px;
     border-radius: 50%;
     background: var(--clr-brand-lighter);
-    bottom: 70%;
+    bottom: 65%;
     left: 48%;
     z-index: -4;
     /* transform: translate(-50%,-50%); */
@@ -572,7 +591,7 @@ input{
 .products{
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 4em 2em;
 }
 .products__card{
   flex: 1 0 250px;
@@ -597,8 +616,17 @@ input{
   justify-content: center;
   align-items: center;
   background: var(--clr-brand-lighter);
-  margin-bottom: 1em;
+  margin-bottom: .4em;
+  height: 75%;
 }
+.btn-all{
+  margin-right: 0 auto;
+  margin-top: 3em;
+  cursor: pointer;
+  color: var(--clr-brand);
+  font-weight: 700;
+}
+
 .products__content{
   padding: .5em;
 }

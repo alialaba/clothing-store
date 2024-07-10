@@ -34,7 +34,7 @@ export const Home =(props)=>{
     return(
         <>
 
-<section>
+<section className="section-hero">
     <div className="container">
         <div className="hero">
             <div className="hero__content stack">
@@ -46,6 +46,7 @@ export const Home =(props)=>{
                  <img src={HeroImg} alt="hero-img"/>
             </div>
         </div>
+        
     </div>
 </section>
 
@@ -108,7 +109,7 @@ export const Home =(props)=>{
          
       </div>
 
-      <Button text="See All"/>
+      <Button className="btn-all" text="See All"/>
     </div>
 </section>
 
