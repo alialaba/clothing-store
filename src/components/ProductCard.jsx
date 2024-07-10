@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./Button";
+import { FaStar } from "react-icons/fa";
 
 export const ProductCard =(props)=>{
     return(
@@ -10,7 +11,11 @@ export const ProductCard =(props)=>{
             <div className="products__content stack">
                 <div className="products__content--upper">
                    <p className="products__name">{props.item.name}</p>
-                   <span className="products__rating">{props.item.rating} *</span>
+                   
+                   <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+                   <span  className="products__rating">{props.item.rating} </span>
+                   <FaStar style={{color: "yellow", marginLeft: "5px"}}/>
+                   </div>
                 </div>
 
                 <div className="products__content--lower">  

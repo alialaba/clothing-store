@@ -25,21 +25,21 @@
         "name": "Hot",
         "items": [
           {
-            "img": "../src/assets/hot-1.png",
+            "img": "https://i.ibb.co/hsjBD45/stylish-woman-standing-white-stylish-orange-sweater-multicolor-stripe-culotte-removebg-preview-1-2.png",
             "name": "Stylish Thick Top",
             "discountPrice": 19.99,
             "actualPrice": 29.99,
             "rating": 4.5
           },
           {
-            "img": "../src/assets/hot-2.png",
+            "img": "https://i.ibb.co/bW1m2Cg/hotter-img2.png",
             "name": "Comfy Jean Trousers",
             "discountPrice": 24.99,
             "actualPrice": 39.99,
             "rating": 4.0
           },
           {
-            "img": "../src/assets/hot-2.png",
+            "img": "https://i.ibb.co/3h10WsT/hotter-img3.png",
             "name": "Leather Jacket & Pant",
             "discountPrice": 24.99,
             "actualPrice": 39.99,
@@ -80,28 +80,28 @@
             "name": "Turtle Neck Top"
           },
           {
-            "img": "../src/assets/product-img-five.png",
+            "img": "https://i.ibb.co/s63bPW3/image-1-14-removebg-preview-1-1.png",
             "discountPrice": 19.99,
             "actualPrice": 39.99,
             "rating": 4.0,
             "name": "Turtle Neck Top"
           },
           {
-            "img": "../src/assets/product-img-six.png",
+            "img": "https://i.ibb.co/FKLxR4c/image-1-5-removebg-preview-1-1.png",
             "discountPrice": 15.99,
             "actualPrice": 29.99,
             "rating": 3.5,
             "name": "Turtle Neck Top"
           },
           {
-            "img": "../src/assets/product-img-seven.png",
+            "img": "https://i.ibb.co/ckGhd9V/image-1-9-removebg-preview-2-1.png",
             "discountPrice": 15.99,
             "actualPrice": 29.99,
             "rating": 3.5,
             "name": "Turtle Neck Top"
           },
           {
-            "img": "../src/assets/product-img-seven.png",
+            "img": "https://i.ibb.co/HTC037g/portrait-young-stylish-girl-model-casual-summer-clothes-brown-hat-with-natural-makeup-isolated-remov.png",
             "discountPrice": 15.99,
             "actualPrice": 29.99,
             "rating": 3.5,

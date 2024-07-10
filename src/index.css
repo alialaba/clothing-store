@@ -544,7 +544,7 @@ input{
   .hero::before{
     position: absolute;
     content: "";
-    /* background-image: url(../src/assets/test.png); */
+    /* background-image: url(../src/assets/desktop-pattern.svg); */
     background-repeat: no-repeat;
   height: 100%;
   width: 100%;
