@@ -2,6 +2,7 @@ import React from "react";
 import cartImg from "../assets/cart-new.png";
 import { FaAngleLeft , FaAngleRight, FaPlus, FaMinus} from "react-icons/fa";
 import { Button } from "../components/Button";
+import { Link } from "react-router-dom";
 
 export const Cart = ()=>{
     return(
@@ -65,7 +66,10 @@ export const Cart = ()=>{
 
                      </div>
                      <div className="cart__btn">
+                        <Link to="/shopping"> 
                         <Button text="Add to Cart " className="btn-bg"/>
+                        </Link>
+                        
                         <Button text="Add to Watchlist" className="btn-br"/>
                      </div>
                 </div>
