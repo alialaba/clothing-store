@@ -1,5 +1,5 @@
 import React from "react";
-import cartImg from "../assets/cart-img.png";
+import cartImg from "../assets/cart-new.png";
 import { FaAngleLeft , FaAngleRight, FaPlus, FaMinus} from "react-icons/fa";
 import { Button } from "../components/Button";
 
@@ -42,6 +42,20 @@ export const Cart = ()=>{
                      </div>
                      <div className="cart__coloring">
                         <h4>Select Color: Black</h4>
+                        <div className="cart__color">
+                           <div className="clr-br br-black">
+                                <div className="clr-bg bg-black" ></div>     
+                           </div>
+                           <div className="clr-br br-red">
+                                <div className="clr-bg  bg-red"></div>     
+                           </div>
+                           <div className="clr-br  br-gray">
+                                <div className="clr-bg bg-gray"></div>     
+                           </div>
+                           <div className="clr-br br-yellow">
+                                <div className="clr-bg bg-yellow"></div>     
+                           </div>
+                        </div>
                      </div>
 
                      <div className="cart__counter">

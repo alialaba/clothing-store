@@ -16,7 +16,9 @@
   --clr-brand-light:#DDA0DD; 
   --clr-brand-lighter:#DDA0DD4D;
   font-size: 62.5%;
-
+  --clr-yellow :#FFFD54;
+  --clr-gray: #87B2A6; 
+  --clr-orange:#FF1409;
   /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424; */
@@ -146,7 +148,7 @@ input{
 /* Template naming */
 
   .stack > * + * {
-    margin-block-start: 1rem;
+    margin-block-start: 1.3rem;
   }
 
 .btn-bg{
@@ -688,11 +690,11 @@ position: relative;
 }
 .cart__img{
   background: var(--clr-brand-lighter);
-  padding: 2em;
-  flex: 1 0 40%;
-  /* display: flex;
+  /* padding: 2em; */
+  flex: 1 0 30%;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 .cart__angle{
   background: var(--clr-white);
@@ -715,8 +717,8 @@ position: relative;
   }
   .cart__angle-right{
     position: absolute;
-    right: 58%;
-    bottom: 46%;
+    right: 570px;
+    bottom: 44%;
   }
 }
 
@@ -759,13 +761,14 @@ position: relative;
 }
 .cart__size div{
   border: 1px solid var(--clr-brand);
-  padding: .5em;
-  width: 40px;
-  height: 40px;
+  /* padding: .5em; */
+  width: 57px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  font-size: 1.2rem;
 
 }
 .cart__size-selected{
@@ -785,4 +788,56 @@ position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
+}
+.cart__color{
+  display: flex;
+  gap: 1em;
+  /* margin-top: 1em; */
+}
+.clr-br{
+  /* border: 1px solid red; */
+  width: 28px;
+  height: 28px; 
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* padding: .1em; */
+}
+.clr-bg{
+  /* background-color: red; */
+  /* border: 1px solid var(--clr-white); */
+  width: 22px;
+  height: 22px; 
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.br-black{
+  border: 1px solid var(--clr-black);
+}
+.bg-black{
+  background-color: var(--clr-black);
+}
+.br-yellow{
+  border: 1px solid var(--clr-yellow);
+}
+.bg-yellow{
+  background-color: var(--clr-yellow);
+}
+.br-gray{
+  border: 1px solid var(--clr-gray);
+}
+.bg-gray{
+  background-color: var(--clr-gray);
+}
+.br-red{
+  border: 1px solid var(--clr-orange);
+}
+.bg-red{
+  background-color: var(--clr-orange);
 }
