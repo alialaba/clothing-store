@@ -596,7 +596,7 @@ input{
   gap: 4em 2em;
 }
 .products__card{
-  flex: 1 0 250px;
+  flex: 1 0 200px;
 
 }
 .products__content--upper{
