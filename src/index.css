@@ -176,7 +176,7 @@ input{
 
 .container{
   margin: 0 auto;
-  width: min(1024px, 90%);
+  width: min(1200px, 90%);
 }
 
 /* HEADER STYLES */
@@ -561,7 +561,7 @@ input{
     overflow-x: hidden;
     z-index: -1;
     /* background-color: red; */
-    top: 62px;
+    top: 98px;
     left: 0;
     /* left: 200px; */
     
