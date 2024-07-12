@@ -561,7 +561,7 @@ input{
     overflow-x: hidden;
     z-index: -1;
     /* background-color: red; */
-    top: 96px;
+    top: 62px;
     left: 0;
     /* left: 200px; */
     
@@ -582,8 +582,8 @@ input{
     height: 250px;
     border-radius: 50%;
     background: var(--clr-brand-lighter);
-    bottom: 65%;
-    left: 48%;
+    bottom: 58%;
+    left: 45%;
     z-index: -4;
     /* transform: translate(-50%,-50%); */
   }
