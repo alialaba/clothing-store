@@ -58,9 +58,9 @@ export const ProductCard = (props) => {
         </div>
 
         <div className="products__content--lower">
-          <span className="products__actual-price">{getCurrentPriceUSD()}</span>
+          <span className="products__actual-price">${getCurrentPriceUSD()}</span>
           <span className="products__discount-price">
-            {getDiscountPriceUSD()}
+            ${getDiscountPriceUSD()}
           </span>
         </div>
         {/* "/cart" */}

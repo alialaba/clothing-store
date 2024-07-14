@@ -15,6 +15,9 @@ import { ShoppingCart } from './pages/ShoppingCart';
 
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 //   const [loading, setLoading] = useState(true);
 //   const [products, setProducts] = useState(null);
 //   const [error, setError]= useState(null);
