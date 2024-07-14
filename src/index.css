@@ -551,7 +551,7 @@ input{
 
   }
   .section-hero::after{
-    position: absolute;
+    /* position: absolute;
     content: "";
     background-image: url(../src/assets/sample.png);
     background-repeat: no-repeat;
@@ -560,17 +560,10 @@ input{
     width: 100%;
     overflow-x: hidden;
     z-index: -1;
-    /* background-color: red; */
+    
     top: 98px;
-    left: 0;
-    /* left: 200px; */
+    left: 0; */
     
-    /* bottom: 300px; */
-    
-  /* height: 100%;
-  width: 100%;
-  background-size: cover; */
-  /* top: 20%; */
   }
   .hero__title{
     font-size: 5.5rem;
@@ -935,4 +928,28 @@ tfoot td {
   width: 150px;
   padding: .5em;
   cursor: pointer;
+}
+/* pagination */
+.pagination{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: .5em;
+  margin-top: 5em;
+}
+.pagination_pages{
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--clr-brand);
+  padding: .4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-inter);
+  font-size: 1.3rem;
+  border-radius: 4px;
+}
+.pagination .active_page{
+  background-color: var(--clr-brand);
+  color: var(--clr-white);
 }

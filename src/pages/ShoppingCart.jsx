@@ -4,8 +4,15 @@ import {FaPlus, FaMinus} from "react-icons/fa";
 import img1 from "../assets/sm-img.png";
 import img2 from "../assets/sm1-img.png"
 import { Button } from "../components/Button";
+import { useCartStore } from "../store/cart";
 
 export const ShoppingCart =()=>{
+    const {cartItems, updateCartItem} = useCartStore()
+
+    const handleUpdateCartItem = (id, quantity) => {
+        updateCartItem(id, {quantity})
+    }
+
     return(
         <section>
     <div className="shopping-cart container"> 
@@ -24,29 +31,32 @@ export const ShoppingCart =()=>{
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                {cartItems?.map((cartItem) => (
+                    <tr>
                     <td data-label="Select"><input type="checkbox" /></td>
                     <td data-label="Items">
                         {/* <div> */}
-                            <img src={img1} alt="img"/>
+                            <img  src={`https://api.timbu.cloud/images/${cartItem?.photos[0].url}`} alt={cartItem?.name}/>
                         {/* </div> */}
                     </td>
                     <td data-label="Description">
-                        <div><h4>Padded Jacket</h4></div>
+                        <div><h4>{cartItem?.name}</h4></div>
                         <div><span>Black</span>, <span>Medium</span></div>
 
                     </td>
-                    <td data-label="Price">$10.00</td>
+                    <td data-label="Price">{cartItem?.current_price?.[0]?.USD?.[1]}</td>
                     <td data-label="Quantity">
                     <div className="shopping-cart__counter">
-                        <FaPlus/>
-                         <span>1</span>
-                        <FaMinus/>
+                        <FaPlus onClick={() => handleUpdateCartItem(cartItem?.id,cartItem?.quantity +1 )} />
+                         <span>{cartItem?.quantity}</span>
+                        <FaMinus  onClick={() => handleUpdateCartItem(cartItem?.id,cartItem?.quantity -1 )} className={`${cartItem?.quantity <=1} ? "disable" : ""`} />
 
                      </div>
                     </td>
-                    <td data-label="Total">$20.00</td>
+                    <td data-label="Total">{cartItem?.current_price?.[0]?.USD?.[1] * cartItem?.quantity}</td>
                 </tr>
+                ))}
+                
                 <tr>
                     <td data-label="Select"><input type="checkbox" /></td>
                     <td data-label="Items">
