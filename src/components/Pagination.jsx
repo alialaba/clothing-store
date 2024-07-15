@@ -1,6 +1,6 @@
 import React from "react"
 // import { ArrowRight, ArrowLeft } from "app/assets/svg"
-import {FaArrowLeft, FaArrowRight} from "react-icons/fa"
+import {  FaAngleLeft, FaAngleRight} from "react-icons/fa"
 
 const Pagination = ({
   currentPage,
@@ -30,8 +30,9 @@ const Pagination = ({
         className={`arrow ${currentPage === 1 ? "disable_arrow" : "none"}`}
       >
         
-        <FaArrowLeft
+        <FaAngleLeft
           onClick={() => onPageChange(currentPage - 1)}
+          style={{cursor:"pointer"}}
         />
       </div>
 
@@ -53,8 +54,9 @@ const Pagination = ({
         }`}
       >
         
-        <FaArrowRight
+        <FaAngleRight
           onClick={() => onPageChange(currentPage + 1)}
+          style={{cursor:"pointer"}}
         />
       </div>
     </div>
