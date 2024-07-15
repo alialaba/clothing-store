@@ -38,7 +38,7 @@ form{
 }
 .payment__bill li {
     display: flex;
-    gap: 6em;
+    justify-content: space-between;
     margin-bottom: 1em;
     align-items: center;
     

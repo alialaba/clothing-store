@@ -8,6 +8,11 @@ import { Button } from "./Button";
 export const Products = ({ initialPage = 1 }) => {
     // const { products, setPage, currentPage, totalPages, pageSize } = props;
 
+
+    const organization_id = import.meta.env.VITE_ORD_ID;
+    const Appid = import.meta.env.VITE_APIKEY
+    const Apikey = import.meta.env.VITE_APPID;
+
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState(null);
     const [error, setError] = useState(null);
@@ -25,7 +30,7 @@ export const Products = ({ initialPage = 1 }) => {
         setLoading(true);
         setError(null)
         
-       const URL = `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=a52557c210d74e21bcc0cdd12418b641&reverse_sort=false&page=${page}&size=4&Appid=64T060XLW2WAWI0&Apikey=52280394a72741fcabd8841362e615cd20240712161453950230`
+       const URL = `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=${organization_id}&reverse_sort=false&page=${page}&size=4&Appid=${Appid}&Apikey=${Apikey}`
        
         
            const fetchData =  async ()=>{

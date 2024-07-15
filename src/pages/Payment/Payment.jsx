@@ -160,23 +160,23 @@ export const Payment = () => {
               <h4 className="payment__subtitle">Payment details </h4>
               <ul className="payment__bill">
                 <li>
-                  <p>Subtotal</p>
-                  <p>$105.99</p>
+                 <div> <p>Subtotal</p></div>
+                  <div><p>$105.99</p></div>
                 </li>
 
                 <li>
-                  <p>Discount</p>
-                  <p>$5.000</p>
+                  <div><p>Discount</p></div>
+                  <div><p>$5.000</p></div>
                 </li>
 
                 <li>
-                  <p>Delivery </p>
-                  <p> $4.99</p>
+                  <div><p>Delivery</p></div>
+                  <div><p>$4.99</p></div>
                 </li>
 
                 <li>
-                  <p>Grand Total</p>
-                  <p>$90.99</p>
+                  <div><p>Grand Total</p></div>
+                  <div><p>$90.99</p></div>
                 </li>
               </ul>
               
